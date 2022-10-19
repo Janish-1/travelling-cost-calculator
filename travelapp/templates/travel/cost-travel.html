@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+
+{% block title %} Travelling Cost {% endblock title %}
+
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="box">
+                    <h1>Welcome, {{ request.user.username }}</h1>
+        
+                    <p></p>
+                    <p>Average Expenses are as follows </p>
+                    <p>Average value per kilometer is assumed to be 8</p>
+                    <p> Total Cost: Rs. {{ ta }} </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}
