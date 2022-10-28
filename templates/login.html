@@ -3,13 +3,21 @@
 {% block title %}Login{% endblock title%}
 
 {% block body %}
+<div class="three"><center>
+    <div class="color">
+      <div style="position:relative; right:50px;">
+        <h1>Travelling Cost Calculator</h1>
+      </div>
+    </div>
+    </center>
+  </div>
 <div class="container">
     <div class="row">
         <div class="col-md-6">
             <div class="card">
                 <form method="POST" class="box">
                 {% csrf_token %}
-                    <h1>Login</h1>
+                    <h1>Login Page</h1>
 
                     {% if messages %}
                     <ul class="messages">
@@ -24,7 +32,7 @@
 
                     <input type="text" name="username" id="username" placeholder="Username" required> 
                     <input type="password" name="password" id="password" placeholder="Password" required> 
-                    <p>Don't have an account? <a style="" class="forgot" href="{% url 'SignUp' %}">SignUp</a></p>
+                    <p>Don't have an account? <a style="" class="forgot" href="{% url 'SignUp' %}">Sign Up</a></p>
                     <a class="forgot" href="{% url 'ForgetPassword' %}">Forgot password?</a> 
                     <input type="submit" name="" value="Login" href="#">
                     {% comment %} <div class="col-md-12">

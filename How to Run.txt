@@ -1,0 +1,6 @@
+Step 1 : Enter the "Travelling-expense-calculator folder( one with two folders namely 'env' and 'website"
+Step 2 : Open a Terminal and change directory to the Folder mentioned in step 1
+Step 3 : run the following command 'env\Scripts\activate' It will activate the Virtual Environment
+Step 4 : run 'cd website'
+Step 5 : Install all the modules in requirements.txt
+Step 6 : run 'python manage.py runserver' to run the server and navigate
